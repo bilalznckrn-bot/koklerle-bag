@@ -29,7 +29,7 @@ body { background-color: #f4f4f4; color: #333; }
 .hero-card h3 { font-size: 14px; }
 
 /* İçerik ve Yan Sütun Düzeni */
-.content-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+.content-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; width: 100%; margin-top: 20px; }
 
 .section-title { font-size: 16px; border-bottom: 2px solid #1a1a1a; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; }
 
