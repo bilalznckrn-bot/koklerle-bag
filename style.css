@@ -1,6 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
 body { background-color: #f4f4f4; color: #333; }
 
+/* Header & Nav */
 .header { display: flex; justify-content: space-between; align-items: center; max-width: 1100px; margin: 20px auto; padding: 15px; background: #fff; border-bottom: 3px solid #1a1a1a; }
 .logo h1 { font-size: 26px; letter-spacing: 1px; }
 .logo span { color: #8b0000; }
@@ -12,7 +13,9 @@ body { background-color: #f4f4f4; color: #333; }
 .navbar a:hover { background: #8b0000; }
 
 .container { max-width: 1100px; margin: 20px auto; }
-.hero-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 180px 180px; gap: 12px; }
+
+/* Manşet Izgarası */
+.hero-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: 180px 180px; gap: 12px; margin-bottom: 30px; }
 .hero-card { background: #222; color: #fff; padding: 15px; display: flex; flex-direction: column; justify-content: flex-end; position: relative; background-size: cover; background-position: center; }
 
 .main-card { grid-row: 1 / 3; grid-column: 1 / 2; background-image: linear-gradient(to top, rgba(0,0,0,0.8), transparent), url('https://images.unsplash.com/photo-1542810634-71277d95dcbb?w=800'); }
@@ -24,3 +27,43 @@ body { background-color: #f4f4f4; color: #333; }
 .badge { background: #8b0000; color: #fff; padding: 3px 8px; font-size: 10px; font-weight: bold; width: fit-content; margin-bottom: 6px; }
 .hero-card h2 { font-size: 20px; }
 .hero-card h3 { font-size: 14px; }
+
+/* İçerik ve Yan Sütun Düzeni */
+.content-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 20px; }
+
+.section-title { font-size: 16px; border-bottom: 2px solid #1a1a1a; padding-bottom: 5px; margin-bottom: 15px; text-transform: uppercase; }
+
+/* Sol Akış */
+.main-feed { background: #fff; padding: 20px; border: 1px solid #e0e0e0; }
+.featured-post { margin-bottom: 20px; border-bottom: 1px solid #eee; padding-bottom: 20px; }
+.featured-post img { width: 100%; height: 250px; object-fit: cover; margin-bottom: 10px; }
+.featured-content h2 { font-size: 22px; margin: 8px 0; }
+.featured-content .date { font-size: 12px; color: #777; display: block; margin-bottom: 8px; }
+.featured-content p { font-size: 14px; color: #555; line-height: 1.5; }
+
+.small-posts-list { display: flex; flex-direction: column; gap: 15px; }
+.post-item { display: flex; gap: 12px; align-items: center; }
+.post-item img { width: 80px; height: 60px; object-fit: cover; }
+.post-item h4 { font-size: 14px; color: #222; }
+.post-item .date { font-size: 11px; color: #888; }
+
+/* Sağ Sütun & Sosyal Medya */
+.sidebar { display: flex; flex-direction: column; gap: 20px; }
+.social-widget { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: #fff; padding: 15px; border: 1px solid #e0e0e0; }
+.social-box { background: #f8f9fa; padding: 12px 5px; text-align: center; border: 1px solid #eee; }
+.social-box i { font-size: 18px; margin-bottom: 5px; display: block; }
+.social-box span { font-weight: bold; font-size: 12px; display: block; }
+.social-box small { font-size: 10px; color: #777; }
+
+.facebook i { color: #3b5998; }
+.instagram i { color: #e1306c; }
+.pinterest i { color: #bd081c; }
+.tiktok i { color: #000; }
+.twitter i { color: #000; }
+.youtube i { color: #ff0000; }
+
+.author-card { background: #fff; border: 1px solid #e0e0e0; padding: 15px; text-align: center; }
+.author-card img { width: 100%; height: 180px; object-fit: cover; margin-bottom: 10px; }
+.author-badge { background: #ffcc00; color: #000; font-size: 11px; font-weight: bold; padding: 3px 8px; display: inline-block; margin-bottom: 8px; }
+.author-info h4 { font-size: 16px; margin-bottom: 5px; }
+.author-info p { font-size: 12px; color: #666; }
