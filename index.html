@@ -55,26 +55,23 @@
         .post-item h4 { font-size: 14px; color: #222; }
         .post-item .date { font-size: 11px; color: #888; }
 
-        /* Sağ Sütun & Sosyal Medya */
+        /* Sağ Sütun & Sosyal Medya (Sadece 2'li Grid) */
         .sidebar { display: flex; flex-direction: column; gap: 20px; }
-        .social-widget { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; background: #fff; padding: 15px; border: 1px solid #e0e0e0; }
-        .social-box { background: #f8f9fa; padding: 12px 5px; text-align: center; border: 1px solid #eee; }
-        .social-box i { font-size: 18px; margin-bottom: 5px; display: block; }
-        .social-box span { font-weight: bold; font-size: 12px; display: block; }
+        .social-widget { display: grid; grid-template-columns: repeat(2, 1fr); gap: 10px; background: #fff; padding: 15px; border: 1px solid #e0e0e0; }
+        .social-box { background: #f8f9fa; padding: 15px 5px; text-align: center; border: 1px solid #eee; text-decoration: none; color: inherit; }
+        .social-box i { font-size: 22px; margin-bottom: 6px; display: block; }
+        .social-box span { font-weight: bold; font-size: 13px; display: block; }
         .social-box small { font-size: 10px; color: #777; }
 
-        .facebook i { color: #3b5998; }
         .instagram i { color: #e1306c; }
-        .pinterest i { color: #bd081c; }
-        .tiktok i { color: #000; }
         .twitter i { color: #000; }
-        .youtube i { color: #ff0000; }
 
+        /* Yazar & Kalem Kâğıt Kutusu */
         .author-card { background: #fff; border: 1px solid #e0e0e0; padding: 15px; text-align: center; }
-        .author-card img { width: 100%; height: 180px; object-fit: cover; margin-bottom: 10px; }
-        .author-badge { background: #ffcc00; color: #000; font-size: 11px; font-weight: bold; padding: 3px 8px; display: inline-block; margin-bottom: 8px; }
-        .author-info h4 { font-size: 16px; margin-bottom: 5px; }
-        .author-info p { font-size: 12px; color: #666; }
+        .author-card img { width: 100%; height: 200px; object-fit: cover; margin-bottom: 12px; }
+        .author-badge { background: #8b0000; color: #fff; font-size: 11px; font-weight: bold; padding: 3px 8px; display: inline-block; margin-bottom: 8px; }
+        .author-info h4 { font-size: 16px; margin-bottom: 6px; color: #1a1a1a; }
+        .author-info p { font-size: 12px; color: #666; line-height: 1.4; }
     </style>
 </head>
 <body>
@@ -171,47 +168,27 @@
             <!-- Sağ Taraf: Sosyal Medya ve Yan Sütun -->
             <aside class="sidebar">
                 
-                <!-- Sosyal Medya Sayaç Kutusu -->
+                <!-- Sadece Instagram ve X (Twitter) -->
                 <div class="social-widget">
-                    <div class="social-box facebook">
-                        <i class="fa-brands fa-facebook-f"></i>
-                        <span>98,542</span>
-                        <small>Beğeni</small>
-                    </div>
-                    <div class="social-box instagram">
+                    <a href="#" class="social-box instagram">
                         <i class="fa-brands fa-instagram"></i>
-                        <span>9,712</span>
-                        <small>Takipçi</small>
-                    </div>
-                    <div class="social-box pinterest">
-                        <i class="fa-brands fa-pinterest"></i>
-                        <span>54,342</span>
-                        <small>Takipçi</small>
-                    </div>
-                    <div class="social-box tiktok">
-                        <i class="fa-brands fa-tiktok"></i>
-                        <span>6,534</span>
-                        <small>Takipçi</small>
-                    </div>
-                    <div class="social-box twitter">
+                        <span>Takip Et</span>
+                        <small>Instagram</small>
+                    </a>
+                    <a href="#" class="social-box twitter">
                         <i class="fa-brands fa-x-twitter"></i>
-                        <span>87,415</span>
-                        <small>Takipçi</small>
-                    </div>
-                    <div class="social-box youtube">
-                        <i class="fa-brands fa-youtube"></i>
-                        <span>96,371</span>
-                        <small>Abone</small>
-                    </div>
+                        <span>Takip Et</span>
+                        <small>X (Twitter)</small>
+                    </a>
                 </div>
 
-                <!-- Yan Banner / Yazar Kutusu -->
+                <!-- Kalem & Kâğıt Görselli Yazar Kutusu -->
                 <div class="author-card">
-                    <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=300" alt="Yazar">
+                    <img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=500" alt="Kalem ve Kâğıt">
                     <div class="author-info">
-                        <span class="author-badge">YAZMAYI SEVENLER</span>
+                        <span class="author-badge">YAZARLIK BAŞVURUSU</span>
                         <h4>Köklerle Bağ'da Yazar Olun</h4>
-                        <p>Siyer, siyaset ve düşünce alanındaki yazılarınızı okurlarımızla paylaşın.</p>
+                        <p>Siyer, siyaset ve düşünce alanındaki kaleme aldığınız metinleri okurlarımızla buluşturun.</p>
                     </div>
                 </div>
 
